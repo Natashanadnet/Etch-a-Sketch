@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  background: #acb6e5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #86fde8,
+    #acb6e5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #86fde8, #acb6e5);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10rem 50rem 10rem;
+  grid-template-rows: 5rem 30rem 10rem;
+  background-color: red;
+  padding: 1rem;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.screen {
+  background-color: rgb(222, 215, 215);
+  border-radius: 30px;
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  border: 2px solid rgb(84, 84, 84);
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 1 1 auto;
+}
+
+.deco-btn div {
+  background-color: white;
+  border-radius: 100%;
+  min-height: 10rem;
+  min-width: 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-bottom: 2px solid rgb(84, 84, 84);
+}
+
+.deco-btn {
+  grid-row: 3 / span 1;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tittle {
+  grid-column: 2 / span 1;
+  justify-self: center;
+  align-self: center;
+  font-family: "Lobster", cursive;
+  color: rgb(255, 221, 2);
+  font-size: 3rem;
+}
+
+.input-btn {
+  padding: 3rem;
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.scroll {
+  flex-basis: 100%;
+  accent-color: rgb(255, 221, 2);
+}
+
+.pixels {
+  border: 1px solid black;
+  flex-basis: 100%;
+}
+
+.pixels-container {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: stretch;
+}
+
+.erase-btn {
+  grid-row: 2 / span 1;
+  grid-column: 3 / span 1;
+  align-self: center;
+  justify-self: center;
+  background-color: rgb(255, 221, 2);
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  border: none;
+  margin-left: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 5rem;
+  height: 5rem;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5rem;
+}
+
+.btn-tag {
+  flex-basis: 100%;
+  align-self: center;
+  font-family: "Inconsolata", monospace;
+  color: rgb(255, 221, 2);
+  font-size: 2rem;
+}

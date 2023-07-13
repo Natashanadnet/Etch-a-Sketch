@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="tittle">Etch-a-Sketch</h1>
+      <div class="screen"></div>
+      <button class="erase-btn">erase</button>
+      <div class="deco-btn">
+        <div class="btn-1"></div>
+        <div class="btn-2"></div>
+      </div>
+      <div class="input-btn">
+        <p class="btn-tag">size</p>
+        <input
+          class="scroll"
+          type="range"
+          min="10"
+          max="100"
+          value="17"
+          step="1"
+        />
+      </div>
+    </div>
+    <script src="code.js"></script>
+  </body>
+</html>
